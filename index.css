@@ -1,0 +1,61 @@
+:root {
+    --background: rgb(0 0 0);
+    --foreground: rgb(255 255 255);
+    --header-background: rgb(0 0 0 / 0.4);
+    --header-foreground: rgb(210 210 210);
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: "Audiowide", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--header-background);
+}
+
+.navigation {
+    position: relative;
+}
+
+.navigation ul {
+    display: flex;
+    flex-grow: 1;
+    gap: 0.4em;
+}
+
+.navigation ul li {
+    display: block;
+}
+
+.navigation ul li a {
+    display: block;
+    color: var(--header-foreground);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 0.8em 1em;
+    background-color: 
+}
+
+.hero-container {
+    min-height: 500px;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-image {
+    width: 100%;
+}
